@@ -98,9 +98,15 @@ const diccionario = {
     '~':126
   };
 var palabra = "Escuela";
-console.log(palabra[1]);
-
+for(let i=0;i<palabra.length;i++){ //deletreador 
+  process.stdout.write(palabra[i]);
   for(const clave of Object.keys(diccionario)){
-    console.log(`${clave}: ${diccionario[clave]}`);
-
+    if(palabra[i]== clave){
+      console.log(` = ${diccionario[clave]}`);
+      //console.log(`${clave}: ${diccionario[clave]}`);
+    }
   }
+}
+
+
+ 
